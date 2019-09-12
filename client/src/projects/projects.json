@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "image": "/images/portfolio/gemGame.png",
+    "projectTitle": "CrystalsCollector",
+    "projectText": "There is a random value assigned for a target score,and each gem is assigned a random value at the beginning of each game. The objective is to get right to the target score without going over."
+  },
+  {
+    "id": "2",
+    "image": "/images/portfolio/TrainPages.png",
+    "projectTitle": "Train Scheduler",
+    "projectText": "This project uses Firebase for a database to store mock train arrival and departure data, and Moment.js to convert it to how much time remains until the train arrives at a station."
+  },
+  {
+    "id": "3",
+    "image": "/images/portfolio/movieBot.png",
+    "projectTitle": "movieBot",
+    "projectText": "Using the OMDB API to search for movies and movie trailers, and dynamically displaying them on the page in a           modal."
+  },
+  {
+    "id": "4",
+    "image": "/images/portfolio/bamazon.png",
+    "projectTitle": "bamazon",
+    "projectText": "Amazon style app, with 3 different roles in a store - customer, manager, and supervisor."
+  },
+  {
+    "id": "5",
+    "image": "/images/portfolio/friendFinder.png",
+    "projectTitle": "friendFinder",
+    "projectText": "Full stack app, allows the user to compare answers to other users to find their closest match."
+  },
+  {
+    "id": "6",
+    "image": "/images/portfolio/burger.png",
+    "projectTitle": "Burgers",
+    "projectText": "This app uses a MySQL database to hold data collected from the input field and Handlebars to display the changed data on the front end."
+  },
+  {
+    "id": "7",
+    "image": "/images/portfolio/sequelizedBurger.png",
+    "projectTitle": "sequelizedBurgers",
+    "projectText": "This app uses the sequelize ORM, which allows for easier interaction with the data stored in the database. Also uses Handlebars to display the data in the front end."
+  },
+  {
+    "id": "8",
+    "image": "/images/portfolio/trafficMon.png",
+    "projectTitle": "trafficMon",
+    "projectText": "This is a croud-sourcing traffic reporting app. Uses passport for authentication for registered users. User must be registered to create a report."
+  },
+  {
+    "id": "9",
+    "image": "/images/portfolio/theSimpsons.png",
+    "projectTitle": "theSimpsons",
+    "projectText": "Uses Create-React-App. React is a completely different way of rendering front end apps, using JavaScript and reusable components."
+  },
+  {
+    "id": "10",
+    "image": "/images/portfolio/trafficMonReact.png",
+    "projectTitle": "trafficMon React",
+    "projectText": "MERN stack version of trafficMon, with a Google Map displaying the traffic layer. Uses the native browser location API to request user location."
+  }
+]
