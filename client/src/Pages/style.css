@@ -1,0 +1,24 @@
+/* body,
+html {
+  height: 100vh;
+} */
+
+.home {
+    background: url('/images/background/code.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.portfolio {
+  background: url('/images/background/clouds.jpg') repeat center center fixed;
+  background-size: cover;
+}
+
+.contact {
+    background: url('/images/background/keyboard.jpg') repeat center center fixed;
+    background-size: cover;
+}
+
+.content {
+  background-color: rgba(255,255,255, 0.8);
+  padding: 4em;
+}
