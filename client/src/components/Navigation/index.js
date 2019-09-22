@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Navbar.Brand>
-        <h1 className="signature">Matt Kilcup</h1>
+        <h1 className="signature ml-5 mr-5">Matt Kilcup</h1>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
