@@ -1,21 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import emailjs from 'emailjs-com';
 import './style.css';
 
-const ContactForm = props => {
-console.log(props.formData)
+const ContactForm = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = event => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = event => {
+    console.log('submitted');
+    event.preventDefault();
+    emailjs
+      .send('gmail', 'template_z94DQ8Z0', templateParams, 'user_TLMwrj0PSqq3A4j3MB7eB')
+      .then(
+        response => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        err => {
+          console.log('FAILED...', err);
+        }
+      )
+      .finally(
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        })
+      );
+  };
+
+  const templateParams = {
+    name: formData.name,
+    email: formData.email,
+    message: formData.message
+  };
+
   return (
-    <Form className="contactForm">
+    <Form className="contactForm" onSubmit={handleSubmit}>
       <h1 className="text-center text-white">Email me</h1>
-      <Form.Group onSubmit={props.handleSubmit}>
+      <Form.Group>
         <Form.Label>Your Email Address</Form.Label>
         <Form.Control
           type="email"
           placeholder="Enter your email address"
           name="email"
-          value={props.handleChange}
+          value={formData.email}
+          onChange={handleChange}
         />
-        <Form.Text className="text-warning">I'll never share your email with anyone else.</Form.Text>
+        <Form.Text className="text-warning">
+          I'll never share your email with anyone else.
+        </Form.Text>
       </Form.Group>
       <Form.Group>
         <Form.Label>Name</Form.Label>
@@ -23,7 +66,8 @@ console.log(props.formData)
           type="text"
           placeholder="Enter your name"
           name="name"
-          value={props.handleChange}
+          value={formData.name}
+          onChange={handleChange}
         />
       </Form.Group>
       <Form.Group>
@@ -34,7 +78,8 @@ console.log(props.formData)
           type="text"
           name="message"
           placeholder="Enter your message"
-          value={props.handleChange}
+          value={formData.message}
+          onChange={handleChange}
         />
       </Form.Group>
       <Button variant="primary" type="submit">
