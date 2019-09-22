@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import { Container } from 'react-bootstrap';
+
 import Wrapper from '../components/Wrapper';
 import Navigation from '../components/Navigation';
 import ProfileCard from '../components/Cards';
@@ -9,19 +11,21 @@ const Portfolio = () => {
   return (
     <Fragment>
       <Navigation />
-      <div className="container">
-        <h1 className="mb-5 mt-5">Portfolio</h1>
-        <Wrapper>
-          {Projects.map(project => (
-            <ProfileCard
-              key={project.id}
-              image={project.image}
-              title={project.projectTitle}
-              text={project.projectText}
-            />
-          ))}
-        </Wrapper>
-      </div>
+      <Container className="portfolio" fluid="true">
+        <h1 className="p-5 text-white">Portfolio</h1>
+        <Container>
+          <Wrapper>
+            {Projects.map(project => (
+              <ProfileCard
+                key={project.id}
+                image={project.image}
+                title={project.projectTitle}
+                text={project.projectText}
+              />
+            ))}
+          </Wrapper>
+        </Container>
+      </Container>
       <Footer />
     </Fragment>
   );
