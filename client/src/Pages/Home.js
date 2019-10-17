@@ -14,9 +14,6 @@ const Home = () => {
           <Row>
             <div className="col-md-4">
               <img
-                data-aos="fade"
-                data-aos-delay="50"
-                data-aos-duration="3000"
                 className="profile img-fluid"
                 src="/images/portfolio/treesProfile.jpg"
                 alt="Me"
@@ -72,19 +69,25 @@ const Home = () => {
             <Col md={12} className="text-center mt-4 mb-4">
               <h3 className="mb-5 text-primary">Here are a few of my favourite technologies</h3>
               <div className="profileBottom">
-                <a
+                {/* <a
                   href="https://www.w3schools.com/css/default.asp"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img className="companyImages" src="/images/profile/css3.svg" alt="css logo" />
                 </a>
-                <img
-                  className="companyImages"
-                  src="/images/profile/html.svg"
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
                   target="_blank"
-                  alt="HTML5"
-                />
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="companyImages"
+                    src="/images/profile/html.svg"
+                    target="_blank"
+                    alt="HTML5"
+                  />
+                </a> */}
                 <a
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources"
                   target="_blank"
@@ -98,21 +101,19 @@ const Home = () => {
                     alt="javascript logo"
                   />
                 </a>
-                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                  <img
-                    className="companyImages"
-                    src="/images/profile/bootstrap-4.svg"
-                    alt="bootstrap-4 logo"
-                  />
-                </a>
+
                 <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
-                  <img
-                    className="companyImages"
-                    src="/images/profile/react.svg"
-                    alt="react logo"
-                  />
+                  <img className="companyImages" src="/images/profile/react.svg" alt="react logo" />
                 </a>
                 <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+                  {' '}
+                  <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                    <img
+                      className="companyImages"
+                      src="/images/profile/bootstrap-4.svg"
+                      alt="bootstrap-4 logo"
+                    />
+                  </a>
                   <img
                     className="companyImages"
                     src="/images/profile/nodejs.svg"
