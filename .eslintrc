@@ -1,0 +1,15 @@
+{
+  "plugins": ["security"],
+  "extends": ["wesbos", "plugin:security/recommended"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "printWidth": 120
+      }
+    ],
+    "ignorePatterns": ["node_modules/"]
+  }
+}
