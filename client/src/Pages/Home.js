@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Fragment>
       <Navigation />
-      <Container fluid="true" className="home" style={{ height: '100vh' }}>
+      <Container fluid="true" className="home">
         <h1 className="text-white p-5">Home</h1>
         <Container className="content">
           <Row>
@@ -69,25 +69,6 @@ const Home = () => {
             <Col md={12} className="text-center mt-4 mb-4">
               <h3 className="mb-5 text-primary">Here are a few of my favourite technologies</h3>
               <div className="profileBottom">
-                {/* <a
-                  href="https://www.w3schools.com/css/default.asp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img className="companyImages" src="/images/profile/css3.svg" alt="css logo" />
-                </a>
-                <a
-                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    className="companyImages"
-                    src="/images/profile/html.svg"
-                    target="_blank"
-                    alt="HTML5"
-                  />
-                </a> */}
                 <a
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources"
                   target="_blank"
@@ -101,7 +82,6 @@ const Home = () => {
                     alt="javascript logo"
                   />
                 </a>
-
                 <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
                   <img className="companyImages" src="/images/profile/react.svg" alt="react logo" />
                 </a>
@@ -126,6 +106,9 @@ const Home = () => {
                     src="/images/profile/express-109.svg"
                     alt="expressjs logo"
                   />
+                </a>
+                <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
+                  <img src="/images/profile/sass.svg" className="companyImages" alt="sass logo"/>
                 </a>
                 <a href="https://www.archlinux.org/" target="_blank" rel="noopener noreferrer">
                   <img
