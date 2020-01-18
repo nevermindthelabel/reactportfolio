@@ -1,11 +1,14 @@
 require('dotenv').config();
 const express = require('express');
+const helmet = require('helmet');
+
 const PORT = process.env.PORT || 5000;
 const path = require('path');
 const routes = require('./routes');
 
 const app = express();
 
+app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
