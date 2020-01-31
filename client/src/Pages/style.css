@@ -4,7 +4,6 @@ html {
 }
 
 .home {
-  position: relative;
   background: url('/images/background/code.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -13,7 +12,7 @@ html {
 }
 
 .portfolio {
-  background: url('/images/background/clouds.jpg') repeat center center fixed;
+  background: url('/images/background/clouds.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +20,11 @@ html {
 }
 
 .contact {
-  background: url('/images/background/keyboard.jpg') repeat center center fixed;
+  background: url('/images/background/keyboard.jpg') no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
