@@ -11,21 +11,21 @@ const Contact = () => {
   return (
     <Fragment>
       <Navigation />
-      <Container fluid="true" className="contact" style={{ height: '100vh' }}>
+      <Container fluid="true" className="contact">
         <h1 className="p-5 text-white">Contact</h1>
         <Container>
           <Row>
             <Col md={8}>
               <ContactForm
-                // className="contactForm"
-                // formData={formData}
-                // setFormData={setFormData}
-                // onChange={handleChange}
-                // onSubmit={handleSubmit}
+              // className="contactForm"
+              // formData={formData}
+              // setFormData={setFormData}
+              // onChange={handleChange}
+              // onSubmit={handleSubmit}
               />
             </Col>
             <Col md={4} className="contactBackground">
-              <h1>Contact links</h1>
+              <h1 className="text-white">Contact links</h1>
               <div className="mx-auto">
                 <ul style={{ listStyle: 'none', marginTop: '5em' }}>
                   <li

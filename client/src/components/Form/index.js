@@ -17,7 +17,7 @@ const ContactForm = () => {
   };
 
   const handleSubmit = event => {
-    console.log('submitted');
+    // console.log('submitted');
     event.preventDefault();
     emailjs
       .send('gmail', 'template_z94DQ8Z0', templateParams, 'user_TLMwrj0PSqq3A4j3MB7eB')

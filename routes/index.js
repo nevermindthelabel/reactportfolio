@@ -1,15 +1,18 @@
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
-const path = require('path');
+// const path = require('path');
 
 const app = express();
 
 app.post('/send', (req, res) => {
   const transporter = nodemailer.createTransport({
-    service: process.env.service,
+    // service: process.env.service,
+    host: 'smtp.ethereal.email',
+    port: 587,
     auth: {
-      user: process.env.sendingEmail,
-      pass: process.env.pass
+      user: 'joy.bashirian@ethereal.email',
+      pass: 'FaUgyGtBgGQxrRwEVW'
     }
   });
 
@@ -24,7 +27,7 @@ app.post('/send', (req, res) => {
     if (err) {
       console.error(err.message);
     } else {
-      console.log('message sent');
+      console.log(`message sent ${data}`);
     }
   });
 });

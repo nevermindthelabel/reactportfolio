@@ -18,3 +18,7 @@
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   text-align: left;
 }
+
+.card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
